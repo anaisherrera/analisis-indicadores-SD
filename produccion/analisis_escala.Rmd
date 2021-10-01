@@ -23,9 +23,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = F)
 
 # Introducción
 
-El presente documento expone un análisis de validez con la intención de disminuir la cantidad de ítems por baterías de preguntas. Se busco eliminar aquellas variables que permitieran mantener o mejorar las propiedades psicométricas de las escalas. 
-
-El documento esta estructurado según escalas, siendo cada una sección seleccionable en la barra de la izquierda. Dentro de cada sección se propone un conjunto de variables a eliminar, señalando las razones y el modelo propuesto. Además, en las pestañas se pueden observar descriptivos y correlaciones. 
+El presente documento expone un análisis de las escalas presentadas en el cuestionario de Saberes Docentes. El documento esta estructurado según escalas, presentándose cada escala como una sección seleccionable en la barra de la izquierda. Dentro de cada sección se muestra un gráfico descriptivo de los indicadores de la escala, un gráfico con las correlaciones entre los indicadores y un análisis de validez basado en los resultados de Análisis Factoriales Confirmatorios. 
 
 # __Cuestionario para docentes y directivos (exceptuando a director/a, jefe/a de UTP y jefe/a Técnico)__
 

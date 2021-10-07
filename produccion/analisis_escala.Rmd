@@ -433,7 +433,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q24_1")) 
@@ -671,6 +672,8 @@ Respuestas sobre el/la Jefe/a Técnico/a: Q24_3_NUMERO Por ejemplo Q24_3_1
 pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools, misty,sjPlot,PerformanceAnalytics,ggplot2,lavaan,haven)
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q24_2_")) 
@@ -905,6 +908,8 @@ Respuestas sobre el/la Jefe/a Técnico/a: Q24_3_NUMERO Por ejemplo Q24_3_1
 pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools, misty,sjPlot,PerformanceAnalytics,ggplot2,lavaan,haven)
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q24_3_")) 
@@ -1120,7 +1125,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q25_1")) 
@@ -1203,6 +1209,8 @@ Respuestas sobre el/la Jefe/a Técnico/a: Q25_3_NUMERO Por ejemplo Q25_3_1
 pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools, misty,sjPlot,PerformanceAnalytics,ggplot2,lavaan,haven)
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q25_2_")) 
@@ -1285,6 +1293,8 @@ Respuestas sobre el/la Jefe/a Técnico/a: Q25_3_NUMERO Por ejemplo Q25_3_1
 pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools, misty,sjPlot,PerformanceAnalytics,ggplot2,lavaan,haven)
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q25_3_")) 
@@ -1371,7 +1381,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q25_1")) 
@@ -1585,6 +1596,8 @@ Respuestas sobre el/la Jefe/a Técnico/a: Q25_3_NUMERO Por ejemplo Q25_3_1
 pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools, misty,sjPlot,PerformanceAnalytics,ggplot2,lavaan,haven)
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q25_2_")) 
@@ -1799,6 +1812,8 @@ Respuestas sobre el/la Jefe/a Técnico/a: Q25_3_NUMERO Por ejemplo Q25_3_1
 pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools, misty,sjPlot,PerformanceAnalytics,ggplot2,lavaan,haven)
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q25_3_")) 
@@ -2034,6 +2049,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q16_1")) 
@@ -2297,7 +2314,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q16_2")) 
@@ -2567,7 +2585,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q16_3")) 
@@ -2827,7 +2846,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q20_1")) 
@@ -3078,7 +3098,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q20_2")) 
@@ -3331,7 +3352,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q20_3")) 
@@ -3581,7 +3603,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q48_1")) 
@@ -3823,7 +3846,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q48_2")) 
@@ -4068,7 +4092,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q48_3")) 
@@ -4323,7 +4348,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q28_")) 
@@ -4590,7 +4616,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q39")) 
@@ -4956,7 +4983,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q41_")) 
@@ -5169,7 +5197,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q42_")) 
@@ -5251,7 +5280,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q45_")) 
@@ -5477,7 +5507,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q34")) 
@@ -5729,7 +5760,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q37")) 
@@ -5978,7 +6010,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q35")) 
@@ -6242,7 +6275,8 @@ pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, SciViews, summarytools
 
 
 Cuestionario_SD_09_09 <- read_sav("../input/data/Cuestionario_SD_09-09.sav")
-
+Cuestionario_SD_09_09 = Cuestionario_SD_09_09 %>%  filter(Q1==1) %>% as.data.frame()
+Cuestionario_SD_09_09 <- Cuestionario_SD_09_09 %>% filter(!is.na(Cuestionario_SD_09_09$Q9 | Cuestionario_SD_09_09$Q28))
 
 # Seleccionar y renombrar variables de la base de datos de estudiantes.                               
 datos_mejoras <- Cuestionario_SD_09_09  %>% dplyr::select(starts_with("Q44_")) 
